@@ -44,10 +44,15 @@ Place this as part of your constructor
 And finally log your data :-
 
 
-
         logger.LogInformation("Getting weather data.");
 
 
+
+To check, goto Azure web portal, application insights and search 
+
+
+
+That's it! :)
 
 
 
