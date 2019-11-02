@@ -10,6 +10,9 @@ dotnet add package Microsoft.Extensions.Logging.ApplicationInsights --version 2.
 
 add the following codes and remember to provide your application insights guid id :-
 
+
+
+
 public static IWebHostBuilder CreateWebHostBuilder(string[] args) =>
       WebHost.CreateDefaultBuilder(args)
         .UseStartup<Startup>()
@@ -33,6 +36,7 @@ public static IWebHostBuilder CreateWebHostBuilder(string[] args) =>
 
 Place this as part of your constructor 
 
+
  private readonly `ILogger` _logger;
 
     public ValuesController(ILogger<ValuesController> logger)
@@ -41,10 +45,13 @@ Place this as part of your constructor
     }
 
 
+
+
 And finally log your data :-
 
 
         logger.LogInformation("Getting weather data.");
+
 
 
 
